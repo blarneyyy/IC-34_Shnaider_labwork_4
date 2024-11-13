@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INURE</title>
+    <link rel="icon" href="sun.png" type="image/jpg">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-title">
+                <img src="star.png" alt="Зірка" class="header-img">
+                <h1>INURE</h1>
+            </div>
+            <nav>
+                <ul class="nav_menu">
+                    <li><a href="index.html" class="nav_cl">Головна</a></li>
+                    <li><a href="#" class="nav_cl">Вхід</a></li>
+                    <li><a href="#" class="nav_cl">Реєстрація</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section style="display: flex; justify-content: space-between; margin: 20px 0;">
+            <div style="width: 70%; margin-right: 20px;">
+                <h2>Загальна інформація про сайт</h2>
+                <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <th>Функція</th>
+                        <th>Опис</th>
+                    </tr>
+                    <tr>
+                        <td>Щоденник снів</td>
+                        <td>
+                            <ul>
+                                <li>Зберігайте всі свої сни для подальшого аналізу.
+                                    <ul>
+                                        <li>Легке редагування та сортування за датою.</li>
+                                        <li>Можливість додавати коментарі, що пов'язані зі сном.</li>
+                                        <li>Швидке видалення при необхідності.</li>
+                                    </ul>
+                                </li>
+                                <li>Розвивайте здатність запам'ятовувати сни та досліджуйте свою підсвідомість.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Передбачення</td>
+                        <td>
+                            <ul>
+                                <li>Отримайте відповіді на питання за допомогою карт Таро.</li>
+                                <li>Розкрийте приховані аспекти ситуацій у вашому житті.</li>
+                                <li>Використовуйте передбачення для ухвалення важливих рішень.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="width: 30%; text-align: center; display: flex; align-items: center; justify-content: center;">
+                <img src="sun.png" alt="Сонце" style="max-width: 50%; margin-top: 20px;">
+            </div>
+        </section>
+
+        <section style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+            <div style="width: 20%; text-align: center;">
+                <img src="moon.jpg" alt="Місяць" class="same-size-img">
+            </div>
+
+            <div style="width: 40%; margin-right: 20px; margin-left: 20px;">
+                <h2>Запишіть сон</h2>
+                <form method="POST">
+                    <div>
+                        <label for="dream-date">Дата:</label>
+                        <input type="date" id="dream-date" name="dream-date" required>
+                    </div>
+                    <div>
+                        <label for="dream-type">Вид:</label>
+                        <select id="dream-type" name="dream-type" required>
+                            <option value="звичайний">Звичайний</option>
+                            <option value="свідомий">Свідомий</option>
+                            <option value="кошмар">Кошмар</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="dream-details">Деталі:</label>
+                        <textarea id="dream-details" name="dream-details" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Зберегти</button>
+                </form>
+            </div>
+        
+            <div style="width: 20%; text-align: center;">
+                <img src="cardback1.jpg" alt="Карта Таро" class="same-size-img">
+            </div>
+        
+            <div style="width: 40%; margin-left: 20px;">
+                <h2>Отримайте передбачення</h2>
+                <form method="POST">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                        <div style="flex-grow: 1;">
+                            <label for="question">Ваше питання:</label>
+                            <input type="text" id="question" name="question" required>
+                        </div>
+                    </div>
+                    <button type="submit">Дізнатися</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="https://docs.google.com/spreadsheets/d/17S9Vlde8vuH7AQ8MiKdE87nWYAU43x_A059je1LClXo/edit?gid=654911969#gid=654911969" target="_blank" rel="noopener noreferrer">
+            Опис предметної галузі</a></p>
+    </footer>
+
+</body>
+</html>
